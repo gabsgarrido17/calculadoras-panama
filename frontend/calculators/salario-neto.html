@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Salario Neto – Calculadoras Panamá</title>
+    <meta name="description" content="Calculadora de salario neto en Panamá considerando CSS, Seguro Educativo e ISR.">
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Salario Neto</h1>
+        <nav>
+          <a href="../index.html">Inicio</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="form-container">
+        <h2>Calculadora de salario neto</h2>
+        <form id="salary-form">
+          <label for="salary">Salario bruto mensual</label>
+          <input type="number" id="salary" name="salary" min="0" step="0.01" required />
+          <input type="submit" value="Calcular" />
+        </form>
+        <div id="alert" class="alert" style="display:none"></div>
+        <div id="result" class="result" style="display:none"></div>
+        <div id="share-buttons" style="display:none; margin-top:1rem;">
+          <button id="share-whatsapp">Compartir por WhatsApp</button>
+          <button id="copy-link">Copiar enlace</button>
+          <span id="copy-confirmation" style="display:none; margin-left: 0.5rem; color: var(--color-secondary); font-size: 0.9rem;">Enlace copiado</span>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>© 2025 calculadoras.com.pa</p>
+    </footer>
+    <script src="../js/salario.js"></script>
+  </body>
+</html>
